@@ -3,7 +3,10 @@
 
     /* TYPOGRAPHY */
 	h1 { 
-		font-size: 3em; letter-spacing: -4px;
+		/*font-size: 3em; letter-spacing: -4px;*/
+        font-size: 2.5em;
+        letter-spacing: -2px;
+        text-transform: uppercase;
 		}
     h2 {
         font-size: 2em;
@@ -30,7 +33,14 @@
 		display: none; 
 		}
 	.site-title {
-		display: block; position: static; width: auto; line-height: 1.2; text-align: center; padding: .8em; background: #2BA163;
+        display: block;
+        position: static;
+        width: auto;
+        line-height: 1.2;
+        text-align: center;
+        padding: .8em;
+        background: #334455;
+        text-transform: initial;
 		}
 	.mobile-title {
 		display: none;
@@ -316,7 +326,7 @@
     
 	/* TYPOGRAPHY */
     h1 { 
-		font-size: 4em; line-height: 1;
+		font-size: 3em; line-height: 1;
 		}
 	
 	 /* increase column gutter on large screens */
