@@ -659,7 +659,8 @@ body {
 	font-weight: 400; letter-spacing: -1px; margin-top: 1em !important;
 	}
 .home-section .button { 
-	margin-top: 3em; 
+    color: #fff;
+    border-color: #fff;
 	}  
 
 /* PAGE BACKGROUNDS */
@@ -1188,29 +1189,31 @@ body {
 		
 /* MEDIA CELL DESC */
 .media-cell-desc {
-    position: relative; padding: 20px 40px; background: #fff;
+    position: relative;
+    padding: 20px 40px;
+    background: #fff;
 	}
 .media-cell-desc h3 {
- 	    padding: 0;
-		margin: 0px;
-		font-weight: 400;
-		letter-spacing: -0.03em;
-		font-size: 18px;
-		color: #345;
-		line-height: 1.4;
+    padding: 0;
+    margin: 0px;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    font-size: 18px;
+    color: #345;
+    line-height: 1.4;
 	}
-	.media-cell-desc h3 a {
-		color: inherit;
-		}
-	.media-cell-desc p {
-		font-size: .875em; margin: 0; color: #a7b6b9;
-		}
-	.media-cell-desc .date {
-		text-align: center; font-style: italic; color: #ccc; font-size: 14px; line-height: 1;  border-radius: 102px; position: absolute; top: -28px; left: 50%; margin-left: -28px; min-width: 56px; min-height: 56px;  background: #FFF;
-		}
-		.media-cell-desc .date .day {
-			display: block; font-size: 24px; font-style: normal; font-weight: 700; letter-spacing: -2px; margin-top: 8px; color: #345;
-			}
+.media-cell-desc h3 a {
+    color: inherit;
+    }
+.media-cell-desc p {
+    font-size: .875em; margin: 0; color: #a7b6b9;
+    }
+.media-cell-desc .date {
+    text-align: center; font-style: italic; color: #ccc; font-size: 14px; line-height: 1;  border-radius: 102px; position: absolute; top: -28px; left: 50%; margin-left: -28px; min-width: 56px; min-height: 56px;  background: #FFF;
+    }
+.media-cell-desc .date .day {
+    display: block; font-size: 24px; font-style: normal; font-weight: 700; letter-spacing: -2px; margin-top: 8px; color: #345;
+    }
 
 /* MEDIA BOX */
 .media-box {
@@ -1286,7 +1289,7 @@ button,
 a.button {
     display: inline-block;
     position: relative;
-    width: 60%;
+    width: 80%;
     padding: 1.1em 2em;
     margin-bottom: .25em;
     font-size: 11px;
@@ -1300,6 +1303,7 @@ a.button {
     text-shadow: none;
     background: none;
     border-radius: 0;
+    text-align: center;
 	}
 input[type=submit]:hover,
 input[type=button]:hover,

@@ -203,7 +203,7 @@ var portfolioKeyword;
 	
 		function initializeMap() {
 			
-			var mapCanvas = $('#map-canvas');
+			/*var mapCanvas = $('#map-canvas');
 			
 			if(mapCanvas.length) {
 				var latitude = mapCanvas.data("latitude");
@@ -248,7 +248,7 @@ var portfolioKeyword;
 				  icon: pinIcon,
 				  title: 'Hey, I am here'
 				});
-			}
+			}*/
 		}
 		// ------------------------------
 				
@@ -484,7 +484,8 @@ var portfolioKeyword;
 					var itemW = $(el).data('item-width');
 					var containerW = $(el).width();
 					var items = $(el).children('.hentry');
-					var columns = Math.round(containerW/itemW);
+					//var columns = Math.round(containerW/itemW);
+					var columns = 2; // set number of columns for portfolio page and blog page
 				
 					// set the widths (%) for each of item
 					items.each(function(index, element) {
