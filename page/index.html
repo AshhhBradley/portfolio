@@ -241,7 +241,7 @@
 		</header>
 		<div class="site-main" id="main">
 			<section class="pt-page page-layout home-section has-bg-img light-text page-current" id="home" style="background-image: url( ../files/images/homepage.jpg );">
-				<div class="content" style="text-align: left; position: relative; padding: 0;">
+				<!--div class="content" style="text-align: left; position: relative; padding: 0;">
 					<div class="my-work">
 						<h4>Web Development</h4>
 						<div class="owl-carousel" style="width:400px; margin-top:20px; opacity:0.7;">
@@ -273,14 +273,47 @@
                             autoplayHoverPause:true
                         });
                     </script>
-				</div>
+				</div-->
 
 				<div class="content">
 					<div class="layout-medium">
 						<h1 class="page-title" style="display: none;"><i class="pe-7s-home"></i> home</h1>
 						<h2>Ashley Shaun Bradley</h2>
 						<h4>BSc (Hons) Computer Games Technology Graduate</h4>
-						<h4>I am <strong data-typist="a programmer.,a web devloper.,a game devloper." id="typist-element"> an avid Twitter user.</strong></h4>
+						<!--h4>I am <strong data-typist="a programmer.,a web devloper.,a game devloper." id="typist-element"> an avid Twitter user.</strong></h4-->
+						<div class="content" style="text-align: left; position: relative; padding: 0;">
+							<div class="my-work">
+								<h4>Web Development</h4>
+								<div class="owl-carousel" style="width:400px; margin-top:20px; opacity:0.7;">
+									<div><img src="../images/EverydayGossip2.png"></img></div>
+									<div><img src="../images/EverydayEarnings2.png"></img></div>
+								</div>
+		                        <!--p style="text-align: center;"><a class="button" href="../#/portfolio"><i class="pe-7s-expand1"></i> &nbsp; More Information</a></p-->
+							</div>
+
+							<!--div style="margin-left: 50px; margin-top: 30px; float:left; clear: left;">
+								<h4>Game Development</h4>
+								<div class="owl-carousel" style="width:400px; margin-top:20px; opacity:0.7;">
+									<div><img src="../images/BearWithIt.png"></img></div>
+									<div><img src="../images/FinalYearProject.png"></img></div>
+		                            <div><img src="../images/Brian.png"></img></div>
+								</div>
+							</div-->
+		                    <script>
+		                        $(document).ready(function(){ $('.owl-carousel').owlCarousel(); });
+
+		                        var owl = $('.owl-carousel');
+		                        owl.owlCarousel({
+		                            items:1,
+		                            loop:true,
+		                            margin:10,
+		                            animateOut: 'fadeOut',
+		                            autoplay:true,
+		                            autoplayTimeout:5000,
+		                            autoplayHoverPause:true
+		                        });
+		                    </script>
+						</div>
 						<!--ul class="social-intro list-unstyled list-inline">
 						  <li><a href="#" class="icn-facebook"><i class="fa fa-facebook"></i></a></li>
 						  <li><a href="#" class="icn-twitter"><i class="fa fa-twitter"></i></a></li>
