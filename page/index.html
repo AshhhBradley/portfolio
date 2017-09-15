@@ -15,7 +15,7 @@
 	</style>
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<title>Ash Bradley | Game & Web Developer</title>
+	<title>Ashley Shaun Bradley | Game & Web Developer</title>
 	<link href="http://themes.pixelwars.org/empathy/feed/" rel="alternate" title="Empathy » Feed" type="application/rss+xml">
 	<link href="http://themes.pixelwars.org/empathy/comments/feed/" rel="alternate" title="Empathy » Comments Feed" type="application/rss+xml">
 	<script type="text/javascript">
@@ -98,37 +98,37 @@
 	{
 	   // validate hex string
 	   hex = String(hex).replace(/[^0-9a-f]/gi, '');
-	   
+
 	   if ( hex.length < 6 )
 	   {
 		   hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
 	   }
-	   
+
 	   lum = lum || 0;
-	   
+
 	   // convert to decimal and change luminosity
 	   var rgb = "#", c, i;
-	   
+
 	   for ( i = 0; i < 3; i++ )
 	   {
 		   c = parseInt(hex.substr(i*2,2), 16);
 		   c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
 		   rgb += ("00"+c).substr(c.length);
 	   }
-	   
+
 	   return rgb;
 	}
 
 	jQuery(document).ready(function($)
 	{
 	   color = ColorLuminance( '#8acb82', -0.15 );
-	   
+
 	   var styleCss = '<style type="text/css">' +
-					   
+
 						   '.section-title h2:after, .section-title h2:before { background-color: ' + color + '; }' +
-					   
+
 					   '<\/style>';
-	   
+
 	   $( 'body' ).append( styleCss );
 	});
 	</script--><!-- 1. Page Light Text -->
@@ -150,7 +150,7 @@
            $( '.one-page-layout .site-main > section:nth-of-type(6)' ).toggleClass( 'light-text' );
         });
 	</script>
-    
+
     <!--[if lt IE 9]>
         <script src="http://themes.pixelwars.org/empathy/wp-content/themes/empathy/js/ie.js"></script>
     <![endif]-->
@@ -197,16 +197,16 @@
 							jQuery(document).ready(function($)
 							{
 							  var menu_html = "";
-							  
+
 							  $('#main').find('section').each(function()
 							  {
 								  var id = $(this).attr('id');
 								  var icon = $(this).find('.page-title  i').attr('class');
 								  var title = $(this).find('.page-title').text();
 								  var menu_item = '<li><a href="#/' + id + '"><i class="' + icon + '"><\/i>' + title + '<\/a><\/li>';
-								  
+
 								  menu_html += menu_item;
-								  
+
 								  $('.menu-auto').html(menu_html);
 							  });
 							});
@@ -250,7 +250,7 @@
 						</div>
                         <p style="text-align: center;"><a class="button" href="../#/portfolio"><i class="pe-7s-expand1"></i> &nbsp; More Information</a></p>
 					</div>
-                    
+
 					<div style="margin-left: 50px; margin-top: 30px; float:left; clear: left;">
 						<h4>Game Development</h4>
 						<div class="owl-carousel" style="width:400px; margin-top:20px; opacity:0.7;">
@@ -274,13 +274,14 @@
                         });
                     </script>
 				</div>
-				
+
 				<div class="content">
 					<div class="layout-medium">
 						<h1 class="page-title" style="display: none;"><i class="pe-7s-home"></i> home</h1>
-						<h2>Ash Bradley</h2>
+						<h2>Ashley Shaun Bradley</h2>
+						<h4>BSc (Hons) Computer Games Technology Graduate</h4>
 						<h4>I am <strong data-typist="a programmer.,a web devloper.,a game devloper." id="typist-element"> an avid Twitter user.</strong></h4>
-						<ul class="social-intro list-unstyled list-inline">
+						<!--ul class="social-intro list-unstyled list-inline">
 						  <li><a href="#" class="icn-facebook"><i class="fa fa-facebook"></i></a></li>
 						  <li><a href="#" class="icn-twitter"><i class="fa fa-twitter"></i></a></li>
 						  <li><a href="#" class="icn-dribbble"><i class="fa fa-dribbble"></i></a></li>
@@ -291,7 +292,7 @@
 						  <li><a href="#" class="icn-youtube"><i class="fa fa-youtube-play"></i></a></li>
 						  <li><a href="#" class="icn-tumblr"><i class="fa fa-tumblr"></i></a></li>
 						  <li><a href="#" class="icn-github"><i class="fa fa-github-alt"></i></a></li>
-						</ul>
+						</ul-->
 					</div>
 				</div>
 			</section>
@@ -458,15 +459,15 @@
 									<h3>December 2014 - May 2015</h3>
 									<h4>EverydayGossip.org</h4>
 									<h5>Everyday Co.</h5>
-									<p>In December 2014, I developed my own website and I applied to join Google AdSense in order to start monetising the content which I created for my website. 
+									<p>In December 2014, I developed my own website and I applied to join Google AdSense in order to start monetising the content which I created for my website.
 									I used my personal social media accounts to advertise the content which directed a lot of traffic to the site which resulted in the website generating a lot of advertising revenue.</p>
 								</div>
 								<div class="event">
 									<h3>May 2015 – Dec 2016</h3>
 									<h4>EverydayEarnings</h4>
 									<h5>Everyday Co.</h5>
-									<p>After running EverydayGossip.org for over 5 months, EverydayEarnings began development after the idea of expanding became reality. 
-									I partnered up with a friend from college who also had a large audience across multiple social media accounts and set up an affiliate network called EverydayEarnings.<br><br> 
+									<p>After running EverydayGossip.org for over 5 months, EverydayEarnings began development after the idea of expanding became reality.
+									I partnered up with a friend from college who also had a large audience across multiple social media accounts and set up an affiliate network called EverydayEarnings.<br><br>
 									EverydayEarnings allowed anyone to apply and become an affiate, once accepted this allowed them to start making money by advertising our website called EverydayGossip.
 									Once the affiate network became established we began contacting the owners of other social media accounts to join EverydayEarnings.</p>
 								</div>
@@ -835,7 +836,7 @@
 				<div class="content">
 					<div class="layout-medium">
 						<h1 class="page-title"><i class="pe-7s-call"></i> contact</h1>
-						
+
 						<div class="section-title center">
 							<h2><i>Reach Me</i></h2>
 						</div>
@@ -1147,23 +1148,23 @@
 	<div class="p-overlay"></div>
 	<div class="p-overlay"></div><!-- ALERT: used for contact form mail delivery alert -->
 	<div class="site-alert animated"></div>
-	<script src="../files/jquery.address-1.5.min.js" type="text/javascript"></script> 
-	<script src="../files/smoothscroll.js" type="text/javascript"></script> 
-	<script src="../files/nprogress.js" type="text/javascript"></script> 
-	<script src="../files/fastclick.js" type="text/javascript"></script> 
-	<script src="../files/typist.js" type="text/javascript"></script> 
-	<script src="../files/imagesloaded.pkgd.min.js" type="text/javascript"></script> 
+	<script src="../files/jquery.address-1.5.min.js" type="text/javascript"></script>
+	<script src="../files/smoothscroll.js" type="text/javascript"></script>
+	<script src="../files/nprogress.js" type="text/javascript"></script>
+	<script src="../files/fastclick.js" type="text/javascript"></script>
+	<script src="../files/typist.js" type="text/javascript"></script>
+	<script src="../files/imagesloaded.pkgd.min.js" type="text/javascript"></script>
 	<script src="../files/jquery.isotope.min.js" type="text/javascript"></script>
-	<script src="../files/jquery.fitvids.js" type="text/javascript"></script> 
-	<script src="../files/jquery.validate.min.js" type="text/javascript"></script> 
-	<script src="../files/jquery.uniform.min.js" type="text/javascript"></script> 
-	<script src="../files/jquery.magnific-popup.min.js" type="text/javascript"></script> 
-	<script src="../files/socialstream.jquery.js" type="text/javascript"></script> 
-	<script src="../files/js" type="text/javascript"></script> 
-	<script src="../files/main.js" type="text/javascript"></script> 
-	<script src="../files/wp-fix.js" type="text/javascript"></script> 
+	<script src="../files/jquery.fitvids.js" type="text/javascript"></script>
+	<script src="../files/jquery.validate.min.js" type="text/javascript"></script>
+	<script src="../files/jquery.uniform.min.js" type="text/javascript"></script>
+	<script src="../files/jquery.magnific-popup.min.js" type="text/javascript"></script>
+	<script src="../files/socialstream.jquery.js" type="text/javascript"></script>
+	<script src="../files/js" type="text/javascript"></script>
+	<script src="../files/main.js" type="text/javascript"></script>
+	<script src="../files/wp-fix.js" type="text/javascript"></script>
 	<script src="../files/wp-embed.min.js" type="text/javascript"></script>
-	
+
 	<script charset="UTF-8" src="../files/common.js" type="text/javascript"></script>
 	<script charset="UTF-8" src="../files/map.js" type="text/javascript"></script>
 	<script charset="UTF-8" src="../files/util.js" type="text/javascript"></script>
@@ -1171,7 +1172,7 @@
 	<script charset="UTF-8" src="../files/onion.js" type="text/javascript"></script>
 	<script charset="UTF-8" src="../files/stats.js" type="text/javascript"></script>
 	<script charset="UTF-8" src="../files/controls.js" type="text/javascript"></script>
-	
+
 	<style type="text/css">
 	   /*.section-title h2:after, .section-title h2:before { background-color: #75ad6f; }*/
 	</style>
