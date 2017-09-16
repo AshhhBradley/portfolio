@@ -180,10 +180,11 @@
 		font-size: .75em;
 		}
 	.my-work {
-		/*margin-left: -150px;*/
-		/*margin-top: 30px;*/
-		float:left;
-		display:block;
+		float: left;
+		display: block;
+	}
+	.my-work-mobile {
+		display: none;
 	}
 
 	/* BLOG */

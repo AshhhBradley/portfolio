@@ -4678,3 +4678,7 @@ a.icn-github {
 .my-work {
 	display: none;
 }
+
+.my-work-mobile {
+	display: block;
+}
