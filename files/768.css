@@ -421,17 +421,17 @@
 }
 
 /* TWITTER PROFILE CARD */
-* {
+/** {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
+}*/
 
-body {
+.profile-card body {
   background-color: #ecf0f1;
 }
 
-header {
+.profile-card header {
   display: block;
   overflow: hidden;
   position: relative;
@@ -639,7 +639,7 @@ header {
 	font-size: .8em;
 	font-family: 'Montserrat', Arial;
   text-align: center;
-  padding: .8em 2em;
+  padding: .7em 2em;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
@@ -665,6 +665,6 @@ header {
 }
 
 .tw-feed {
-	width: 350px;
+	width: 400px;
 	margin: 0 auto;
 }
