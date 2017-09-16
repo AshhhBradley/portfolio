@@ -826,8 +826,12 @@ html {
 	max-width: 700px;
 }
 
-#about-me .layout-medium, #resume .layout-medium, #blog .layout-medium, #contact .layout-medium {
+#resume .layout-medium, #blog .layout-medium, #contact .layout-medium {
 	max-width: 1240px;
+}
+
+#about-me .layout-medium {
+	max-width: 1500px;
 }
 
 .hentry {
