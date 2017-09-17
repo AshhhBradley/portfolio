@@ -826,6 +826,10 @@ html {
 	max-width: 700px;
 }
 
+.layout-medium {
+  max-width: 1240px;
+}
+
 #resume .layout-medium, #blog .layout-medium, #contact .layout-medium {
 	max-width: 1240px;
 }
