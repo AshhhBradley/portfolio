@@ -2305,7 +2305,7 @@ body {
  a.button {
  	display: inline-block;
  	position: relative;
- 	width: 80%;
+ 	width: 100%;
  	padding: 1.1em 2em;
  	margin-bottom: .25em;
  	font-size: 11px;
@@ -4396,12 +4396,12 @@ body {
  }
 
  .project-info {
- 	width: 65%;
+ 	width: 75%;
  	height: auto;
  }
 
  .project-description {
- 	width: 65%;
+ 	width: 100%;
  }
 
  .portfolio-single .entry-content img,
