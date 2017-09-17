@@ -826,8 +826,8 @@ html {
 	max-width: 700px;
 }
 
-.layout-medium {
-  max-width: 1240px;
+.portfolio-single .layout-medium {
+  max-width: 1500px;
 }
 
 #resume .layout-medium, #blog .layout-medium, #contact .layout-medium {
