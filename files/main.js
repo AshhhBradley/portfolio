@@ -139,7 +139,7 @@ var portfolioKeyword;
 		// ------------------------------
 		// PORTFOLIO DETAILS
 		// Show details
-		$(".one-page-layout a.ajax").on('click',function() {
+		$(".one-page-layout a.ajax").live('click',function() {
 
 			var returnVal;
 			var url = $(this).attr('href');
@@ -155,27 +155,6 @@ var portfolioKeyword;
 			$.address.path('/' + detailUrl);
 
 			//$.address.path(portfolioKeyword + '/' + detailUrl );
-
-			// $.ajax({
-			// 	type: 'GET',
-			// 	url: 'index.html',
-			// 	timeout: 2000,
-			// 	success: function(data) {
-			// 		console.log('complete');
-			// 		$(document).ready(function(){ $('#portfolio-latest-posts').owlCarousel(); });
-			//
-			// 		var owl = $('#portfolio-latest-posts');
-			// 		owl.owlCarousel({
-			// 				items:4,
-			// 				loop:true,
-			// 				margin:10,
-			// 				animateOut: 'fadeOut',
-			// 				autoplay:true,
-			// 				autoplayTimeout:5000,
-			// 				autoplayHoverPause:true
-			// 		});
-			// 	}
-			// });
 
 			return false;
 		});

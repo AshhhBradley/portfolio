@@ -489,7 +489,7 @@
 							</div>
 
 							<div class="col-sm-5" style="float: right;">
-								<div id="wrapper" class="profile-card">
+								<div class="profile-card">
 								  <header>
 								    <div class="bio">
 								      <img src="https://pbs.twimg.com/profile_banners/83661888/1483361506/1500x500" alt="background" class="bg">
@@ -509,7 +509,7 @@
 								    </div>
 								  </header>
 
-								  <div class="profile-content">
+								  <div id="wrapper" class="profile-content">
 								    <div class="data">
 								      <ul>
 								        <li>
@@ -1057,6 +1057,18 @@
 											autoplayTimeout:5000,
 											autoplayHoverPause:true
 									});
+
+									$.ajax({
+									  url: '../files/latest-posts.json',
+									  dataType: 'json',
+									  success: function(data) {
+									    var content = '';
+									    for (i in data.owl) {
+					            	content += data.owl[i].item;
+							        }
+									    owl.trigger('insertContent.owl',content);
+									  }
+									});
 									</script>
 
 								</div>
@@ -1066,187 +1078,6 @@
 				</div>
 			</section>
 			<section class="pt-page page-layout" id="page-2">
-				<div class="content">
-					<div class="layout-medium">
-						<h1 class="page-title"><i class="pe-7s-user"></i> Portfolio Page 1</h1>
-
-						<div class="row">
-							<div class="col-sm-7">
-								<div class="section-title center">
-									<h2><i>Services</i></h2>
-								</div>
-								<div class="row">
-									<div class="col-sm-6 col-md-3">
-										<div class="service">
-											<p><img alt="icon-01" class="alignnone size-full wp-image-228" height="512" sizes="(max-width: 512px) 100vw, 512px" src="../files/icon-01.png" width="512"></p>
-											<h4>COPYWRITER</h4>
-											<p>I design super cool websites. It is a long established fact that a reader will be distracted by the readable content.</p>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-3">
-										<div class="service">
-											<p><img alt="icon-02" class="alignnone size-full wp-image-229" height="512" sizes="(max-width: 512px) 100vw, 512px" src="../files/icon-02.png" width="512"></p>
-											<h4>GAME DEV</h4>
-											<p>I can design beautiful type faces for both digital and print media. It is a long established fact that a reader will be distracted.</p>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-3">
-										<div class="service">
-											<p><img alt="icon-03" class="alignnone size-full wp-image-230" height="512" sizes="(max-width: 512px) 100vw, 512px" src="../files/icon-03.png" width="512"></p>
-											<h4>MANAGEMENT</h4>
-											<p>I write about web design. It is a long established fact that a reader will be distracted by the readable content.</p>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-3">
-										<div class="service">
-											<p><img alt="icon-04" class="alignnone size-full wp-image-231" height="512" sizes="(max-width: 512px) 100vw, 512px" src="../files/icon-04.png" width="512"></p>
-											<h4>PROBLEM SOLVER</h4>
-											<p>I have strong project management skills. It is a long established fact that a reader will be distracted by the readable content.</p>
-										</div>
-									</div>
-								</div>
-								<div class="section-title center">
-									<h2><i>Work Process</i></h2>
-								</div>
-								<div class="row">
-									<div class="col-sm-2 col-xs-4">
-										<div class="process">
-											<p><i class="pe-7s-chat"></i></p>
-											<h4>DISCOVER</h4>
-										</div>
-									</div>
-									<div class="col-sm-2 col-xs-4">
-										<div class="process">
-											<p><i class="pe-7s-light"></i></p>
-											<h4>IDEA</h4>
-										</div>
-									</div>
-									<div class="col-sm-2 col-xs-4">
-										<div class="process">
-											<p><i class="pe-7s-vector"></i></p>
-											<h4>DESIGN</h4>
-										</div>
-									</div>
-									<div class="col-sm-2 col-xs-4">
-										<div class="process">
-											<p><i class="pe-7s-network"></i></p>
-											<h4>DEVELOP</h4>
-										</div>
-									</div>
-									<div class="col-sm-2 col-xs-4">
-										<div class="process">
-											<p><i class="pe-7s-browser"></i></p>
-											<h4>TEST</h4>
-										</div>
-									</div>
-									<div class="col-sm-2 col-xs-4">
-										<div class="process">
-											<p><i class="pe-7s-rocket"></i></p>
-											<h4>LAUNCH</h4>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-sm-5" style="float: right;">
-								<div id="wrapper" class="profile-card">
-								  <header>
-								    <div class="bio">
-								      <img src="https://pbs.twimg.com/profile_banners/83661888/1483361506/1500x500" alt="background" class="bg">
-								      <div class="desc">
-								        <h3>@GrievingDoctor</h3>
-								        <p>Last of the Time Lords | #DoctorWho</p>
-								        <p><i class="fa fa-map-marker" aria-hidden="false"></i> Into Darkness</p>
-								      </div>
-								    </div>
-
-								    <div class="avatarcontainer">
-								      <img src="https://pbs.twimg.com/profile_images/877080424211763200/V_BNl4R3_400x400.jpg" alt="avatar" class="avatar">
-								    </div>
-
-								    <div class="followcontainer">
-								      <div class="follow"><i class="fa fa-twitter" aria-hidden="false"></i> Follow</div>
-								    </div>
-								  </header>
-
-								  <div class="profile-content">
-								    <div class="data">
-								      <ul>
-								        <li>
-								          <a href="">Grieving Time Lord</a>
-								          <span>@GrievingDoctor</span>
-								        </li>
-								        <li>
-								          <a class="item twitter"><span class="count"></span></a>
-								          <span>Followers</span>
-								        </li>
-								      </ul>
-								    </div>
-								  </div>
-								</div>
-
-								<div class="tw-feed">
-								  <a class="twitter-timeline" href="https://twitter.com/grievingdoctor"
-								     data-theme="light"
-								     data-link-color="#334455"
-								     border-radius="none"
-								     data-chrome="noheader nofooter noborders noscrollbar transparent"
-								     data-widget-id="413723523169787904"
-								     data-screen-name="grievingdoctor" data-show-replies="false"
-								     width="100%"
-										 height="460"
-								  >Tweets by GrievingDoctor</a>
-								</div>
-
-								<script>
-									$('#wrapper').SocialCounter({
-										twitter_user: 'grievingdoctor'
-									});
-
-									$(document).ready(
-										function iniciar() {
-											$('.follow').on("click", function() {
-												$('.follow').css('background-color', '#34CF7A');
-												$('.follow').html('<div class="icon-ok"></div> Following');
-											});
-										}
-									);
-
-									window.twttr = (function(d, s, id) {
-									  var js, fjs = d.getElementsByTagName(s)[0],
-									    t = window.twttr || {};
-									  if (d.getElementById(id)) return;
-									  js = d.createElement(s);
-									  js.id = id;
-									  js.src = "https://platform.twitter.com/widgets.js";
-									  fjs.parentNode.insertBefore(js, fjs);
-
-									  t._e = [];
-									  t.ready = function(f) {
-									    t._e.push(f);
-									  };
-
-									  return t;
-									}(document, "script", "twitter-wjs"));
-
-									twttr.ready(function(twttr) {
-									  twttr.events.bind("rendered", function(event) {
-									    var widgetIframe = event.target;
-									    if (widgetIframe.parentNode.className != "tw-feed") {
-									      return;
-									    }
-
-									    var style = widgetIframe.contentDocument.createElement("style");
-									    style.innerHTML = "div.timeline-Tweet--isRetweet { display: none}";
-
-									    widgetIframe.contentDocument.head.appendChild(style);
-									  });
-									});
-								</script>
-							</div>
-						</div>
-					</div>
-				</div>
 			</section>
 			<section class="pt-page page-layout menu-item" id="blog">
 				<div class="content">
@@ -1349,7 +1180,112 @@
 				</div>
 			</section>
 			<section class="pt-page page-layout menu-item" id="contact">
-				<div class="content">
+				<div class="layout-medium">
+
+					<h1 class="page-title"><i class="pe-7s-call"></i> Contact Me</h1>
+
+					<article id="post-310" class="hentry post-310 portfolio type-portfolio status-publish has-post-thumbnail portfolio-category-design">
+
+						<div class="entry-content">
+							<div>
+								<div class="mini-text project-info">
+									<h1 class="entry-title">Reach Me</h1></br>
+
+									<style>
+									@media (max-width: 768px) {
+										#contact .col-sm-3 {
+											width: 50%;
+											margin-top: 0em;
+											clear: none;
+										}
+
+										#contact .entry-title {
+											text-align: left;
+										}
+
+										#contact .contact-form {
+											max-width: 800px;
+										}
+
+										#contact .contact-form p {
+											margin-top: 1.5em;
+										}
+
+										#contact .project-description {
+											float: left;
+										}
+									}
+
+									@media (min-width: 768px) {
+										#contact .col-sm-3 {
+											width: 100%;
+											margin-top: 1.5em;
+										}
+
+										#contact .entry-title {
+									    text-align: left;
+										}
+
+										#contact .contact-form {
+									    max-width: 800px;
+										}
+
+										#contact .contact-form p {
+									    margin-top: 1.5em;
+										}
+									}
+									</style>
+
+									<div class="col-sm-3 col-xs-6">
+										<div class="fun-fact">
+											<p><i class="pe-7s-map-marker"></i></p>
+											<h4>based in Birmingham, UK</h4>
+										</div>
+									</div><br>
+
+									<div class="col-sm-3 col-xs-6">
+										<div class="fun-fact">
+											<p><i class="pe-7s-call"></i></p>
+											<h4>Tel : +123 456 78900</h4>
+										</div>
+									</div>
+
+									<div class="col-sm-3 col-xs-6">
+										<div class="fun-fact">
+											<p><i class="pe-7s-mail"></i></p>
+											<h4 style="word-wrap: break-word;">ashley.bradley@mail.bcu.ac.uk</h4>
+										</div>
+									</div></br>
+
+									<div class="col-sm-3 col-xs-6">
+										<div class="fun-fact">
+											<p><i class="pe-7s-check"></i></p>
+											<h4>Freelance Available</h4>
+										</div>
+									</div>
+								</div></br>
+
+								<div class="mini-text project-description" id="project-description">
+									<h1 class="entry-title">Drop Me A Line</h1>
+
+									<div class="contact-form">
+										<form action="http://themes.pixelwars.org/empathy/wp-content/themes/empathy/send-mail.php" id="contact-form" method="post" name="contact-form">
+											<input id="sender_domain" name="sender_domain" type="hidden" value="server@themes.pixelwars.org"><input id="subject" name="subject" type="hidden" value="Contact form message from Empathy">
+											<p><label for="name">NAME</label><input class="required" id="name" name="name" type="text"></p>
+											<p><label for="email">EMAIL</label><input class="required email" id="email" name="email" type="text"></p>
+											<p class="antispam"><label for="url">Leave this empty</label><input id="url" name="url" type="text"></p>
+											<p><label for="message">MESSAGE</label>
+											<textarea class="required" id="message" name="message"></textarea></p>
+											<p><input class="submit button primary" type="submit" value="SEND"></p>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<!--div class="content">
 					<div class="layout-medium">
 						<h1 class="page-title"><i class="pe-7s-call"></i> Contact Me</h1>
 
@@ -1656,8 +1592,8 @@
 								</div>
 							</div>
 						</div-->
-					</div>
-				</div>
+					<!-- </div>
+				</div> -->
 			</section>
 		</div>
 	</div>
