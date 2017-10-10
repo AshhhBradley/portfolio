@@ -714,6 +714,23 @@ hr {
         margin-left: 0
     }
 }
+@media (min-width: 613px){
+  .col-sm-7 {
+      width: 100%;
+  }
+  .col-sm-5 {
+    width: 100%;
+    padding: 0 20%;
+  }
+}
+@media (min-width: 1200px){
+  .col-sm-7 {
+      width: 65%;
+  }
+  .col-sm-5 {
+    width: 35%;
+  }
+}
 @media (min-width: 992px) {
     .col-md-1,
     .col-md-2,

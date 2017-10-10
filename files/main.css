@@ -305,6 +305,11 @@ ul {
 	list-style: disc;
 }
 
+ul li {
+	font-size: 0.9em;
+  letter-spacing: -0.5px;
+}
+
 dt {
 	margin-bottom: .4em;
 	font-size: 12px;
@@ -1317,16 +1322,14 @@ body {
 
  .section-title h2 {
  	margin: 0;
- 	font-size: 11px;
+ 	font-size: .75em;
+  font-weight: 600;
  	text-transform: uppercase;
- 	letter-spacing: 0;
+ 	letter-spacing: .6px;
  	position: relative;
  	display: inline-block;
- 	font-weight: normal;
- 	letter-spacing: 0.2em;
  	white-space: nowrap;
  	text-align: center;
- 	text-transform: uppercase;
  }
 
  .section-title h2:after,
@@ -1356,9 +1359,9 @@ body {
  .section-title h2 i {
  	display: inline-block;
  	position: relative;
- 	padding: .8em 3em;
+ 	padding: .6em 3em;
  	font-style: normal;
- 	color: #fff;
+ 	color: #EEEEEE;
  	background-color: #8ACB82;
  }
 
@@ -1555,9 +1558,10 @@ body {
  .event h2 {
  	margin-left: .6em;
  	margin-bottom: .4em;
- 	font-size: 1.3em;
- 	font-weight: 700;
- 	letter-spacing: 0;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-decoration: underline;
  }
 
  .event h2+p i,
@@ -1588,17 +1592,18 @@ body {
  }
 
  .event h3 {
- 	display: inline-block;
- 	position: relative;
- 	padding: 3px 8px;
- 	font-size: 11px;
- 	line-height: 1.3;
- 	font-weight: 400;
- 	letter-spacing: 0;
- 	margin: 0 0 1.5em 0;
- 	text-transform: uppercase;
- 	color: #fff;
- 	background: #8ACB82;
+  display: inline-block;
+  position: relative;
+  padding: 2px 8px;
+  font-size: .8em;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: .5px;
+  margin: 0 0 1.5em 0;
+  text-transform: uppercase;
+  color: #eeeeee;
+  background: #8ACB82;
+  max-height: 20px;
  }
 
  .event h3:before {
@@ -1623,11 +1628,17 @@ body {
  }
 
  .event h4 {
- 	font-size: 14px;
- 	font-weight: 700;
- 	text-transform: uppercase;
- 	margin: 0 0 .2em 0;
- 	padding: 0;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0px;
+ }
+
+ .event h4.sub-heading {
+  font-size: .9em;
+  letter-spacing: -0.8px;
+  font-weight: 400;
+  margin: 0px;
  }
 
  .event h5 {
@@ -1658,11 +1669,23 @@ body {
 
  .skill-unit h4 {
  	margin: 0 0 4px 0;
- 	font-weight: 400;
- 	font-size: 14px;
+  font-weight: 700;
+  font-size: .96em;
  	position: relative;
  	z-index: 100;
- 	padding-left: 0px;
+ }
+
+ .skill-unit h4.checklist {
+ 	margin-left: 15px;
+  font-size: .86em;
+  font-weight: 600;
+ }
+
+ .skill-unit i {
+  font-weight: 700;
+  font-size: 1.4em;
+  float: left;
+  margin-right: 5px;
  }
 
  .skill-unit .bar {

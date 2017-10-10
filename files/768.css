@@ -133,7 +133,13 @@
   /* TIMELINE */
   .event {
     padding: 0 1em 3em 4em;
+		float: left;
+		width: 100%;
   }
+	.event .modules {
+		float: left;
+		margin-left: 0;
+	}
   .event h3 {
 		margin-left: -1.6em;
 	}
@@ -424,31 +430,10 @@
 }
 
 /* TWITTER PROFILE CARD */
-/** {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}*/
 
-.profile-card body {
-  background-color: #ecf0f1;
-}
-
-.profile-card header {
-  display: block;
-  overflow: hidden;
-  position: relative;
-  padding-bottom: 0em;
-  -moz-border-radius-topleft: 8px;
-  -webkit-border-top-left-radius: 8px;
-  border-top-left-radius: 8px;
-  -moz-border-radius-topright: 8px;
-  -webkit-border-top-right-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-.profile-card {
+.card-container {
   width: auto;
+	max-width: 600px;
   margin: 0em auto 1em auto;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -461,13 +446,30 @@
   box-shadow: #bdc3c7 0 5px 5px;
 }
 
-.profile-card .fa {
+.card-container header {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 0em;
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-container .fa {
   padding-right: 6px;
 }
 
 .bg {
   width: 100%;
   max-height: 180px;
+}
+
+.portfolio-card .bg {
+	max-height: 290px;
 }
 
 .bio:hover > .desc {
@@ -509,6 +511,27 @@
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+}
+
+.portfolio-card-category {
+	position: absolute;
+	display: block;
+}
+
+.portfolio-card-category p {
+	width: 160px;
+	font-family: 'Montserrat';
+	font-size: .8em;
+	padding: 8px;
+	text-align: center;
+	//border-right: 3px solid #ecf0f1;
+	//border-bottom: 3px solid #ecf0f1;
+	border-bottom-right-radius: 8px;
+	margin: 0;
+	background-color: #7d6ea0;
+	color: #fff;
+	overflow: hidden;
+	position: relative;
 }
 
 .avatar img {
@@ -557,10 +580,17 @@
 
 .data {
   color: #333;
+	position: relative;
+  padding: 0.5em 0;
+  text-align: left;
 }
 
 .data li {
   width: auto;
+	max-width: 465px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
   padding: 0px 15px;
   text-align: center;
   display: inline-block;
@@ -574,6 +604,15 @@
 	letter-spacing: -1.2px;
   text-decoration: none;
   color: #333;
+}
+
+.data li.card-title {
+	width: 80%;
+	text-align: left;
+}
+
+.data li.card-link {
+	width: 15%;
 }
 
 .data li a span {
@@ -600,12 +639,17 @@
   margin: 0;
 }
 
+.portfolio-card .data ul {
+  padding: 4px;
+}
+
 .desc {
   position: absolute;
   top: 0;
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
-	height: 77%;
+	height: 100%;
+	max-height: 150px;
 	padding: 2% 2% 0 40%;
   color: white;
   text-align: center;
@@ -622,6 +666,11 @@
   -moz-transition-timing-function: ease-in;
   -o-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
+}
+
+.portfolio-card .desc {
+	background-color: rgba(51, 71, 93, 0.6);
+	max-height: 300px;
 }
 
 .desc h3 {
