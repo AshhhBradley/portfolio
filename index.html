@@ -161,11 +161,6 @@
 	<!--script charset="UTF-8" src="./files/QuotaService.RecordEvent" type="text/javascript"></script-->
 </head>
 <body class="home page page-id-185 page-template page-template-template-homepage page-template-template-homepage-php">
-    <script type="text/javascript">
-        //window.location.href = "./#/home"
-        console.log(window.location.href);
-        console.log(window.location.pathname);
-    </script>
 	<div class="hfeed site" id="page">
 		<header class="header" id="masthead" role="banner">
 			<a class="menu-toggle toggle-link"><i class="fa fa-bars"></i></a>
@@ -594,8 +589,126 @@
 					<div class="layout-medium">
 						<h1 class="page-title"><i class="pe-7s-id"></i> Resume</h1>
 						<div class="row">
-							<div class="col-sm-7">
+							<style>
+								.LI-badge-container.horizontal.light {
+									width: 100%!important;
+									margin-bottom: 0px;
+								}
 
+								@media (max-width: 1200px) {
+									.col-sm-5 {
+											width: 100%;
+											padding: 0;
+									}
+									.resume-links {
+										width: 50%;
+										float: left;
+									}
+									.resume-skills {
+										width: 50%;
+										float: left;
+									}
+									.resume-skills .design-skills {
+										display: none;
+									}
+								}
+
+								@media (max-width: 613px) {
+									.col-sm-5 {
+											width: 100%;
+											padding: 10px;
+									}
+									.resume-links {
+										width: 100%;
+										float: left;
+									}
+									.resume-skills {
+										width: 100%;
+										float: left;
+									}
+
+									.resume-skills .design-skills {
+										display: none;
+									}
+								}
+							</style>
+							<div class="col-sm-5" style="float: right;">
+								<div class="resume-links">
+									<div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="ashhhbradley"><a class="LI-simple-link" href='https://uk.linkedin.com/in/ashhhbradley?trk=profile-badge'></a></div>
+									<p style="text-align: center;"><a class="button" href=""><i class="pe-7s-download"></i>Download CV &nbsp; [.PDF]</a></p>
+								</div>
+
+								<div class="resume-skills">
+									<div class="section-title center">
+										<h2><i>Technical Skills</i></h2>
+									</div>
+									<div class="skill-unit">
+	                  <h4>Programming Languages:</h4>
+										<h4 class="checklist"><i class="pe-7s-check"></i> C#</h4>
+										<h4 class="checklist"><i class="pe-7s-check"></i> C++</h4>
+										<h4 class="checklist"><i class="pe-7s-check"></i> Swift 3.0</h4>
+	                </div>
+	                <div class="skill-unit">
+	                  <h4>Web Based Languages:</h4>
+										<h4 class="checklist"><i class="pe-7s-check"></i> HTML</h4>
+										<h4 class="checklist"><i class="pe-7s-check"></i> CSS</h4>
+										<h4 class="checklist"><i class="pe-7s-check"></i> PHP</h4>
+										<h4 class="checklist"><i class="pe-7s-check"></i> JavaScript</h4>
+	                </div>
+
+									<div class="design-skills">
+										<div class="section-title center">
+											<h2><i>Design Skills</i></h2>
+										</div>
+										<div class="skill-unit">
+											<h4>Photoshop</h4>
+											<div class="bar" data-percent="90">
+												<div class="progress" style="width: 90%;">
+													<span>90</span>
+												</div>
+											</div>
+										</div>
+										<div class="skill-unit">
+											<h4>Cinema 4D</h4>
+											<div class="bar" data-percent="70">
+												<div class="progress" style="width: 70%;">
+													<span>70</span>
+												</div>
+											</div>
+										</div>
+										<div class="skill-unit">
+											<h4>Blender</h4>
+											<div class="bar" data-percent="50">
+												<div class="progress" style="width: 50%;">
+													<span>50</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- <div class="section-title center">
+									<h2><i>TESTIMONIALS</i></h2>
+								</div>
+								<div class="testo">
+									<p><img alt="testo-01" class="alignnone size-full wp-image-263" height="128" src="./files/testo-01.jpg" width="128"></p>
+									<h4>Vincent Wood</h4>
+									<h5>CEO / Gravity Inc.</h5>
+									<p>He is a great and hardworking guy. I am so proud of i have him as my asistant. He helped me so much. Also i am so proud of i have him as my asistant. He helped me so much.</p>
+								</div>
+								<div class="testo">
+									<p><img alt="testo-02" class="alignnone size-full wp-image-264" height="128" src="./files/testo-02.jpg" width="128"></p>
+									<h4>Gary Morgan</h4>
+									<h5>Chemist / Freelancer</h5>
+									<p>He was a great co-worker and a friend. I would’t be where i am without his support.</p>
+								</div>
+								<div class="testo">
+									<p><img alt="testo-03" class="alignnone size-full wp-image-265" height="128" src="./files/testo-03.jpg" width="128"></p>
+									<h4>Jason Wilson</h4>
+									<h5>Lab Geek / Miami Metro</h5>
+									<p>He is ok. I don’t really know him. He looks nice.</p>
+								</div> -->
+							</div>
+							<div class="col-sm-7" style="float: left;">
 								<div class="event">
 									<h2>Education</h2>
 									<p><i class="pe-7s-study"></i></p>
@@ -718,124 +831,12 @@
 									<p>I studied Computer Science at MIT. I create usable web interfaces, front end coding stuff and almost anything. But i love what i do.</p>
 								</div-->
 							</div>
-							<div class="col-sm-5">
-								<style>
-									.LI-badge-container.horizontal.light {
-										width: 100%!important;
-										/*box-shadow: 0 0 2px rgba(51, 68, 85, .99)!important;*/
-										margin-bottom: 0px;
-									}
-								</style>
-								<div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="ashhhbradley"><a class="LI-simple-link" href='https://uk.linkedin.com/in/ashhhbradley?trk=profile-badge'></a></div>
-								<p style="text-align: center;"><a class="button" href=""><i class="pe-7s-download"></i>Download CV &nbsp; [.PDF]</a></p>
-								<div class="section-title center">
-									<h2><i>Technical Skills</i></h2>
-								</div>
-								<div class="skill-unit">
-                  <h4>Programming Languages:</h4>
-									<h4 class="checklist"><i class="pe-7s-check"></i> C#</h4>
-									<h4 class="checklist"><i class="pe-7s-check"></i> C++</h4>
-									<h4 class="checklist"><i class="pe-7s-check"></i> Swift 3.0</h4>
-                </div>
-                <div class="skill-unit">
-                  <h4>Web Based Languages:</h4>
-									<h4 class="checklist"><i class="pe-7s-check"></i> HTML</h4>
-									<h4 class="checklist"><i class="pe-7s-check"></i> CSS</h4>
-									<h4 class="checklist"><i class="pe-7s-check"></i> PHP</h4>
-									<h4 class="checklist"><i class="pe-7s-check"></i> JavaScript</h4>
-                </div>
-									<!--div class="bar" data-percent="80">
-										<div class="progress" style="width: 80%;">
-											<span>80</span>
-										</div>
-									</div>
-								</div>
-								<div class="skill-unit">
-									<h4>C++</h4>
-									<div class="bar" data-percent="80">
-										<div class="progress" style="width: 80%;">
-											<span>80</span>
-										</div>
-									</div>
-								</div>
-								<div class="skill-unit">
-									<h4>HTML</h4>
-									<div class="bar" data-percent="100">
-										<div class="progress" style="width: 100%;">
-											<span>100</span>
-										</div>
-									</div>
-								</div>
-								<div class="skill-unit">
-									<h4>PHP</h4>
-									<div class="bar" data-percent="80">
-										<div class="progress" style="width: 80%;">
-											<span>80</span>
-										</div>
-									</div>
-								</div>
-								<div class="skill-unit">
-									<h4>JavaScript</h4>
-									<div class="bar" data-percent="60">
-										<div class="progress" style="width: 60%;">
-											<span>60</span>
-										</div>
-									</div>
-								</div-->
-								<div class="section-title center">
-									<h2><i>Design Skills</i></h2>
-								</div>
-								<div class="skill-unit">
-									<h4>Photoshop</h4>
-									<div class="bar" data-percent="90">
-										<div class="progress" style="width: 90%;">
-											<span>90</span>
-										</div>
-									</div>
-								</div>
-								<div class="skill-unit">
-									<h4>Cinema 4D</h4>
-									<div class="bar" data-percent="70">
-										<div class="progress" style="width: 70%;">
-											<span>70</span>
-										</div>
-									</div>
-								</div>
-								<div class="skill-unit">
-									<h4>Blender</h4>
-									<div class="bar" data-percent="50">
-										<div class="progress" style="width: 50%;">
-											<span>50</span>
-										</div>
-									</div>
-								</div>
-								<!-- <div class="section-title center">
-									<h2><i>TESTIMONIALS</i></h2>
-								</div>
-								<div class="testo">
-									<p><img alt="testo-01" class="alignnone size-full wp-image-263" height="128" src="./files/testo-01.jpg" width="128"></p>
-									<h4>Vincent Wood</h4>
-									<h5>CEO / Gravity Inc.</h5>
-									<p>He is a great and hardworking guy. I am so proud of i have him as my asistant. He helped me so much. Also i am so proud of i have him as my asistant. He helped me so much.</p>
-								</div>
-								<div class="testo">
-									<p><img alt="testo-02" class="alignnone size-full wp-image-264" height="128" src="./files/testo-02.jpg" width="128"></p>
-									<h4>Gary Morgan</h4>
-									<h5>Chemist / Freelancer</h5>
-									<p>He was a great co-worker and a friend. I would’t be where i am without his support.</p>
-								</div>
-								<div class="testo">
-									<p><img alt="testo-03" class="alignnone size-full wp-image-265" height="128" src="./files/testo-03.jpg" width="128"></p>
-									<h4>Jason Wilson</h4>
-									<h5>Lab Geek / Miami Metro</h5>
-									<p>He is ok. I don’t really know him. He looks nice.</p>
-								</div> -->
-							</div>
+
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="pt-page page-layout portfolio menu-item" id="portfolio">
+			<section class="pt-page page-layout portfolio menu-item" id="projects">
 				<div class="content">
 					<div class="layout-medium" style="max-width:1220px;">
 						<h1 class="page-title"><i class="pe-7s-notebook"></i> Portfolio</h1>
@@ -895,6 +896,24 @@
 									<p class="category">Imagine Cup 2016 Entry</p>
 								</div>
 							</div>
+							<style>
+								.portfolio-card .data ul {
+									padding: 4px;
+									display: inline-block;
+							    width: 100%;
+								}
+								.data li.card-title {
+									border-right: solid 0px #444;
+							    text-align: left;
+									float: left;
+									width: auto;
+								}
+								.data li.card-link {
+									border-left: solid 1px #444;
+									float: right;
+									width: auto;
+								}
+							</style>
 							<div class="media-cell hentry game post-422 portfolio type-portfolio status-publish has-post-thumbnail portfolio-category-game" id="post-422">
 								<div class="media-box">
 									<img alt="05" class="attachment-pixelwars__image_size_2 size-pixelwars__image_size_2 wp-post-image" height="375" sizes="(max-width: 500px) 100vw, 500px" src="./images/Brian.png" width="500">
