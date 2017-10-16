@@ -734,3 +734,343 @@
   width: 100%;
   height: 10em;
 }
+
+/* Linkedin Profile Card */
+.LI-badge-container.horizontal.light {
+  width: 100% !important;
+  margin-bottom: 0px;
+  font-family: "Montserrat", serif !important;
+  font-weight: 700 !important;
+}
+.LI-badge-container.horizontal.light a {
+  color: #334455 !important;
+  text-transform: capitalize;
+}
+.LI-badge-container.horizontal.light a:hover {
+  color: #334455 !important;
+}
+.LI-badge-container.horizontal.light .LI-view-profile {
+  border-color: #ececec !important;
+  border-width: 2px !important;
+  border-radius: 4px !important;
+  height: 35px !important;
+  font-size: 12px !important;
+}
+.LI-badge-container.horizontal.light .LI-view-profile:hover {
+  background-color: #334455 !important;
+  border-color: #334455 !important;
+  color: #eee !important;
+  box-shadow: none !important;
+}
+/*! CSS Used from: https://static.licdn.com/sc/h/bi3v1f73ewvqbszoipmrd935p */
+div.LI-profile-badge a.LI-simple-link {
+  display: none;
+}
+.LI-badge-container.horizontal.light div,
+.LI-badge-container.horizontal.light span,
+.LI-badge-container.horizontal.light a,
+.LI-badge-container.horizontal.light img,
+.LI-badge-container.horizontal.light ul,
+.LI-badge-container.horizontal.light li,
+.LI-badge-container.horizontal.light footer,
+.LI-badge-container.horizontal.light header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+.LI-badge-container.horizontal.light ul {
+  list-style: none;
+}
+.LI-badge-container.horizontal.light footer,
+.LI-badge-container.horizontal.light header {
+  display: block;
+}
+.LI-badge-container.horizontal.light a:focus {
+  outline: thin dotted;
+}
+.LI-badge-container.horizontal.light a:active,
+.LI-badge-container.horizontal.light a:hover {
+  outline: 0;
+}
+.LI-badge-container.horizontal.light img {
+  border: 0;
+}
+.LI-badge-container.horizontal.light a {
+  color: #008cc9;
+  text-decoration: none;
+}
+.LI-badge-container.horizontal.light a:hover,
+.LI-badge-container.horizontal.light a:focus {
+  text-decoration: underline;
+  color: #005e93;
+}
+.LI-badge-container.horizontal.light a:visited {
+  color: #008cc9;
+}
+.LI-badge-container.horizontal.light a:active {
+  color: #005e93;
+}
+.LI-badge-container.horizontal.light a:visited:hover,
+.LI-badge-container.horizontal.light a:visited:focus {
+  color: #005e93;
+  text-decoration: underline;
+}
+.LI-badge-container.horizontal.light a:visited:active {
+  color: #005e93;
+}
+.LI-badge-container.horizontal.light {
+  border-radius: 2px;
+  display: inline-block !important;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.24);
+  word-wrap: break-word;
+  word-break: break-word;
+}
+.LI-badge-container.horizontal.light {
+  font-family: sans-serif;
+}
+.LI-badge-container.horizontal.light .LI-profile-pic {
+  border-radius: 50%;
+}
+.LI-badge-container.horizontal.light .LI-view-profile {
+  max-width: 240px;
+  white-space: inherit;
+  height: auto;
+}
+.LI-badge-container.horizontal.light div,
+.LI-badge-container.horizontal.light span,
+.LI-badge-container.horizontal.light a,
+.LI-badge-container.horizontal.light img,
+.LI-badge-container.horizontal.light ul,
+.LI-badge-container.horizontal.light li,
+.LI-badge-container.horizontal.light footer,
+.LI-badge-container.horizontal.light header {
+  text-decoration: none;
+  line-height: normal;
+  letter-spacing: normal;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.LI-badge-container.horizontal.light .LI-name-container {
+  margin: 25px 20px 0px 25px;
+  display: flex;
+}
+.LI-badge-container.horizontal.light .LI-profile-pic-container {
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+.LI-badge-container.horizontal.light .LI-field {
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 17px;
+  color: #737679;
+  color: rgba(0, 0, 0, 0.55);
+  font-weight: normal;
+}
+.LI-badge-container.horizontal.light .LI-field a {
+  font-size: 13px;
+  line-height: 17px;
+  color: #737679;
+  color: rgba(0, 0, 0, 0.55);
+  font-weight: normal;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.LI-badge-container.horizontal.light .LI-field a:hover,
+.LI-badge-container.horizontal.light .LI-field a:focus {
+  text-decoration: none;
+  color: #006fa6;
+  cursor: pointer;
+}
+.LI-badge-container.horizontal.light .LI-field a:active {
+  color: #005e93;
+}
+.LI-badge-container.horizontal.light .LI-field a:visited:hover,
+.LI-badge-container.horizontal.light .LI-field a:visited:focus {
+  color: #005e93;
+  text-decoration: none;
+}
+.LI-badge-container.horizontal.light .LI-field a:visited:active {
+  color: #005e93;
+}
+.LI-badge-container.horizontal.light .LI-title {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 16px;
+  color: #232629;
+  color: rgba(0, 0, 0, 0.85);
+}
+.LI-badge-container.horizontal.light .LI-name {
+  display: block;
+  font-size: 18px;
+  line-height: 22px;
+  color: #434649;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+}
+.LI-badge-container.horizontal.light .LI-name a {
+  font-size: 18px;
+  line-height: 22px;
+  color: #434649;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  text-decoration: none;
+}
+.LI-badge-container.horizontal.light .LI-name a:hover,
+.LI-badge-container.horizontal.light .LI-name a:focus {
+  text-decoration: none;
+  color: #006fa6;
+  cursor: pointer;
+}
+.LI-badge-container.horizontal.light .LI-name a:active {
+  color: #005e93;
+}
+.LI-badge-container.horizontal.light .LI-name a:visited:hover,
+.LI-badge-container.horizontal.light .LI-name a:visited:focus {
+  color: #005e93;
+  text-decoration: none;
+}
+.LI-badge-container.horizontal.light .LI-name a:visited:active {
+  color: #005e93;
+}
+.LI-badge-container.horizontal.light .LI-row:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.LI-badge-container.horizontal.light .LI-col {
+  float: left;
+}
+.LI-badge-container.horizontal.light .LI-header {
+  width: 70%;
+}
+.LI-badge-container.horizontal.light .LI-logo {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+.LI-badge-container.horizontal.light .LI-icon {
+  padding-top: 6px;
+  width: 85px;
+  max-height: 20px;
+}
+.LI-badge-container.horizontal.light .LI-footer {
+  margin: 0px 15px 20px 25px;
+  position: relative;
+}
+.LI-badge-container.horizontal.light .LI-field-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.LI-badge-container.horizontal.light .LI-view-profile {
+  font-weight: bold;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  margin: 0;
+  overflow: visible;
+  text-decoration: none !important;
+  text-align: center;
+  width: auto;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  padding: 0 13px;
+  height: 31px;
+  line-height: 31px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: #008cc9;
+  background-color: transparent;
+  border-color: #008cc9;
+  white-space: nowrap;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  vertical-align: middle;
+}
+.LI-badge-container.horizontal.light .LI-view-profile:hover,
+.LI-badge-container.horizontal.light .LI-view-profile:focus {
+  -webkit-box-shadow: inset 1px 1px #0077b5, inset -1px -1px #0077b5;
+  -moz-box-shadow: inset 1px 1px #0077b5, inset -1px -1px #0077b5;
+  box-shadow: inset 1px 1px #0077b5, inset -1px -1px #0077b5;
+  border-color: #0077b5;
+  color: #0077b5;
+}
+.LI-badge-container.horizontal.light .LI-view-profile:active {
+  -webkit-box-shadow: inset 1px 1px #0077b5, inset -1px -1px #0077b5;
+  -moz-box-shadow: inset 1px 1px #0077b5, inset -1px -1px #0077b5;
+  box-shadow: inset 1px 1px #0077b5, inset -1px -1px #0077b5;
+  border-color: #005e93;
+  color: #005e93;
+}
+.LI-badge-container.horizontal.light {
+  width: 330px;
+}
+.LI-badge-container.horizontal.light .LI-profile-pic {
+  width: 70px;
+  height: 70px;
+}
+.LI-badge-container.horizontal.light .LI-title {
+  padding-top: 5px;
+}
+.LI-badge-container.horizontal.light .LI-more-info {
+  padding: 10px 20px 5px 25px;
+}
+@media only screen and (max-width: 475px) {
+  .LI-badge-container.horizontal.light {
+    width: 280px;
+  }
+  .LI-badge-container.horizontal.light .LI-name-container {
+    margin: 15px 15px 0px 15px;
+    display: flex;
+  }
+  .LI-badge-container.horizontal.light .LI-name a {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .LI-badge-container.horizontal.light .LI-profile-pic {
+    width: 50px;
+    height: 50px;
+    margin: 6px auto 0 auto;
+  }
+  .LI-badge-container.horizontal.light .LI-title {
+    padding-top: 5px;
+    font-size: 13px;
+  }
+  .LI-badge-container.horizontal.light .LI-more-info {
+    padding: 10px 15px 10px 15px;
+  }
+  .LI-badge-container.horizontal.light .LI-field {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  .LI-badge-container.horizontal.light .LI-field-icon {
+    width: 16px;
+    height: 16px;
+  }
+  .LI-badge-container.horizontal.light .LI-header {
+    width: 65%;
+  }
+  .LI-badge-container.horizontal.light .LI-footer {
+    margin: 0px 15px 20px 15px;
+  }
+}

@@ -60,7 +60,7 @@
 	<!--script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 	<script src="https://socialcounters.000webhostapp.com/SocialCounters/SocialCounters/js/api.js"></script>
-	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+	<!-- <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script> -->
 	<script src="./owl/owl.carousel.js" type="text/javascript"></script>
 	<!--link href="http://themes.pixelwars.org/empathy/wp-json/" rel="https://api.w.org/">
 	<link href="http://themes.pixelwars.org/empathy/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml">
@@ -187,7 +187,7 @@
 								<a href="#"><i class="pe-7s-comment"></i> blog</a>
 							</li>
 							<li>
-								<a href="#"><i class="pe-7s-call"></i> contact</a>
+								<a href="#"><i class="pe-7s-mail"></i> contact</a>
 							</li>
 						</ul>
 						<script>
@@ -211,7 +211,7 @@
 					</div>
 				</nav>
 				<div class="header-search">
-					<form action="http://themes.pixelwars.org/empathy/" id="search-form" method="get" name="search-form" role="search">
+					<form action="" id="search-form" method="get" name="search-form" role="search">
 						<input id="search" name="s" placeholder="enter word" required="required" type="text"> <input id="search-submit" title="Search" type="submit" value="→">
 					</form>
 				</div>
@@ -238,6 +238,7 @@
 		</header>
 		<div class="site-main" id="main">
 			<section class="pt-page page-layout home-section has-bg-img light-text page-current menu-item" id="home" style="background-image: url( ./files/images/homepage.jpg );">
+				<div class="portfolio-card-category" style="z-index: 2;"><p>Under Development</p></div>
 				<div class="content">
 					<div class="layout-medium">
 						<h1 class="page-title" style="display: none;"><i class="pe-7s-home"></i> home</h1>
@@ -247,12 +248,24 @@
 						<div class="content" style="text-align: left; position: relative; padding: 0;">
 							<div class="my-work">
 								<h4><b>Latest Posts</b></h4>
+								<style>
+									.owl-carousel .portfolio-card-category {
+										/*font-size: 0.35em;*/
+										z-index: 2;
+									}
+									.owl-carousel .portfolio-card-category p {
+										font-size: 11px;
+										border-top-left-radius: 8px;
+										width: 130px;
+										font-weight: 500;
+									}
+								</style>
 								<div class="owl-carousel" id="latest-posts" style="width:1600px; margin-top:20px; opacity:0.7;">
-									<div><img src="./images/BearWithIt.png"></img><a href="#">Bear With It</a></div>
-									<div><img src="./images/FinalYearProject.png"></img><a href="#">Final Year Project</a></div>
-		              <div><img src="./images/Brian.png"></img><a href="#">Global Game Jam 2015</a></div>
-									<div><img src="./images/EverydayGossip2.png"></img><a href="#">EverydayGossip</a></div>
-									<div><img src="./images/EverydayEarnings2.png"></img><a href="#">EverydayEarnings</a></div>
+									<div><div class="portfolio-card-category"><p style="background-color: #7d6ea0;">Game Development</p></div><img src="./images/BearWithIt.png"></img><a href="#">Bear With It</a></div>
+									<div><div class="portfolio-card-category"><p style="background-color: #133e69;">Game Development</p></div><img src="./images/FinalYearProject.png"></img><a href="#">Final Year Project</a></div>
+		              <div><div class="portfolio-card-category"><p style="background-color: #c53f3f;">Game Development</p></div><img src="./images/Brian.png"></img><a href="#">Global Game Jam 2015</a></div>
+									<div><div class="portfolio-card-category"><p style="background-color: #334455;">Web Development</p></div><img src="./images/EverydayGossip2.png"></img><a href="#">EverydayGossip</a></div>
+									<div><div class="portfolio-card-category"><p style="background-color: #6952a0;">Web Development</p></div><img src="./images/EverydayEarnings2.png"></img><a href="#">EverydayEarnings</a></div>
 								</div>
 		            <!--p style="text-align: center;"><a class="button" href="./#/portfolio"><i class="pe-7s-expand1"></i> &nbsp; More Information</a></p-->
 							</div>
@@ -327,41 +340,103 @@
 				</div>
 			</section>
 			<section class="pt-page page-layout menu-item" id="about-me">
+				<div class="portfolio-card-category" style="z-index: 2;"><p>Under Development</p></div>
 				<div class="content">
 					<div class="layout-medium">
-						<h1 class="page-title"><i class="pe-7s-user"></i> About Me</h1>
-
 						<div class="row">
 							<div class="col-sm-7">
 								<div class="section-title center">
+									<h1 class="page-title"><i class="pe-7s-user"></i> About Me</h1>
 									<h2><i>Services</i></h2>
 								</div>
 								<div class="row">
+									<style>
+										@media screen and (min-width: 368px) {
+											.game-dev img {
+											    margin-top: 5px;
+											}
+											.service p.game-dev {
+												margin: 0;
+											}
+											.service p {
+												letter-spacing: -0.8px;
+											}
+											.service {
+												border: 1.5px solid #ececec;
+  											border-radius: 8px;
+												padding: 5px;
+											}
+										}
+
+										@media (min-width: 768px) {
+											.col-sm-6 {
+											    padding: 0 5px!important;
+													margin-bottom: 10px;
+											}
+										}
+
+										@media screen and (min-width: 992px) {
+											.service p.game-dev {
+												min-height: 102px;
+												max-height: 102px;
+												width: 50%;
+										    float: left;
+											}
+											.service {
+										    min-height: 255px;
+											}
+											.game-dev-service .unreal-logo {
+												margin-top: 0;
+												margin-left: auto;
+												margin-right: auto;
+												display: block;
+											}
+											.game-dev-service .unity-logo {
+												margin-top: 0.5em;
+												margin-bottom: auto;
+												margin-left: auto;
+												margin-right: auto;
+												display: block;
+											}
+										}
+
+										@media (min-width: 1200px){
+											#about-me .col-sm-5 {
+											    width: 33%;
+											}
+										}
+									</style>
 									<div class="col-sm-6 col-md-3">
-										<div class="service">
-											<p><img alt="icon-01" class="alignnone size-full wp-image-228" height="512" sizes="(max-width: 512px) 100vw, 512px" src="./files/icon-01.png" width="512"></p>
-											<h4>COPYWRITER</h4>
-											<p>I design super cool websites. It is a long established fact that a reader will be distracted by the readable content.</p>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-3">
-										<div class="service">
-											<p><img alt="icon-02" class="alignnone size-full wp-image-229" height="512" sizes="(max-width: 512px) 100vw, 512px" src="./files/icon-02.png" width="512"></p>
-											<h4>GAME DEV</h4>
-											<p>I can design beautiful type faces for both digital and print media. It is a long established fact that a reader will be distracted.</p>
+										<div class="service game-dev-service">
+											<!-- <p><img alt="icon-02" class="alignnone size-full wp-image-229" height="512" sizes="(max-width: 512px) 100vw, 512px" src="./files/icon-02.png" width="512"></p> -->
+											<p class="game-dev">
+												<img alt="" class="alignnone size-full unreal-logo" height="512" sizes="(max-width: 512px) 100vw, 512px" src="./files/images/Unreal_Engine_Black.png" width="512">
+											</p>
+											<p class="game-dev">
+												<img alt="" class="alignnone size-full unity-logo" height="512" sizes="(max-width: 512px) 100vw, 512px" src="./files/images/unity-master-black.png" width="512">
+											</p>
+											<h4>Game Developer</h4>
+											<p>For the past three years I have been studying game technologies and using game engines such as the Unreal Engine 4 & Unity 5.</p>
 										</div>
 									</div>
 									<div class="col-sm-6 col-md-3">
 										<div class="service">
 											<p><img alt="icon-03" class="alignnone size-full wp-image-230" height="512" sizes="(max-width: 512px) 100vw, 512px" src="./files/icon-03.png" width="512"></p>
-											<h4>MANAGEMENT</h4>
+											<h4>Web Developer</h4>
 											<p>I write about web design. It is a long established fact that a reader will be distracted by the readable content.</p>
 										</div>
 									</div>
 									<div class="col-sm-6 col-md-3">
 										<div class="service">
+											<p><img alt="icon-01" class="alignnone size-full wp-image-228" height="512" sizes="(max-width: 512px) 100vw, 512px" src="./files/icon-01.png" width="512"></p>
+											<h4>Social Media</h4>
+											<p>I design super cool websites. It is a long established fact that a reader will be distracted by the readable content.</p>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-3">
+										<div class="service">
 											<p><img alt="icon-04" class="alignnone size-full wp-image-231" height="512" sizes="(max-width: 512px) 100vw, 512px" src="./files/icon-04.png" width="512"></p>
-											<h4>PROBLEM SOLVER</h4>
+											<h4>Video Editor</h4>
 											<p>I have strong project management skills. It is a long established fact that a reader will be distracted by the readable content.</p>
 										</div>
 									</div>
@@ -484,7 +559,7 @@
 								</p-->
 							</div>
 
-							<div class="col-sm-5" style="float: right;">
+							<div class="col-sm-5" style="margin-top: 20px; padding-left: 40px; float: right;">
 								<div class="card-container">
 								  <header>
 								    <div class="bio">
@@ -521,7 +596,7 @@
 								  </div>
 								</div>
 
-								<div class="tw-feed">
+								<div class="tw-feed" style="padding-top: 30px;">
 								  <a class="twitter-timeline" href="https://twitter.com/grievingdoctor"
 								     data-theme="light"
 								     data-link-color="#334455"
@@ -530,7 +605,7 @@
 								     data-widget-id="413723523169787904"
 								     data-screen-name="grievingdoctor" data-show-replies="false"
 								     width="100%"
-										 height="460"
+										 height="540"
 								  >Tweets by GrievingDoctor</a>
 								</div>
 
@@ -585,16 +660,12 @@
 				</div>
 			</section>
 			<section class="pt-page page-layout menu-item" id="resume">
+				<div class="portfolio-card-category" style="z-index: 2;"><p>Under Development</p></div>
 				<div class="content">
 					<div class="layout-medium">
 						<h1 class="page-title"><i class="pe-7s-id"></i> Resume</h1>
 						<div class="row">
 							<style>
-								.LI-badge-container.horizontal.light {
-									width: 100%!important;
-									margin-bottom: 0px;
-								}
-
 								@media (max-width: 1200px) {
 									.col-sm-5 {
 											width: 100%;
@@ -626,7 +697,6 @@
 										width: 100%;
 										float: left;
 									}
-
 									.resume-skills .design-skills {
 										display: none;
 									}
@@ -634,7 +704,28 @@
 							</style>
 							<div class="col-sm-5" style="float: right;">
 								<div class="resume-links">
-									<div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="ashhhbradley"><a class="LI-simple-link" href='https://uk.linkedin.com/in/ashhhbradley?trk=profile-badge'></a></div>
+									<!-- <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="ashhhbradley"><a class="LI-simple-link" href='https://uk.linkedin.com/in/ashhhbradley?trk=profile-badge'></a></div> -->
+									<div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="ashhhbradley" data-rendered="true" data-uid="860093">
+									  <a class="LI-simple-link" href="https://uk.linkedin.com/in/ashhhbradley?trk=profile-badge"></a>
+									  <div>
+									    <div dir="ltr" class="LI-badge-container-horizontal-light LI-badge-container horizontal light large" style="display: none">
+									      <header class="LI-name-container LI-row">
+									        <div class="LI-col">
+									          <div class="LI-profile-pic-container"><img src="https://static.licdn.com/scds/common/u/images/themes/katy/ghosts/person/ghost_person_200x200_v1.png" class="LI-profile-pic" alt="Ashley Bradley" width="200" height="200"></div>
+									        </div>
+									        <div class="LI-col LI-header">
+									          <div class="LI-name"><a href="https://uk.linkedin.com/in/ashhhbradley?trk=profile-badge-name">Ashley Bradley</a></div>
+									          <div class="LI-title">Game &amp; Web Developer</div>
+									        </div>
+									      </header>
+									      <ul class="LI-more-info">
+									        <li class="LI-field"><img src="https://static.licdn.com/scds/common/u/images/themes/katy/ghosts/company/ghost_company_80x80_v1.png" class="LI-field-icon" alt="Self-Employment">Self-Employment</li>
+									        <li class="LI-field"><img class="LI-field-icon" alt="Birmingham City University" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/4/005/0b0/337/0d05c8b.png" width="200" height="200"><a href="https://www.linkedin.com/edu/birmingham-city-university-12692?trk=profile-badge-school">Birmingham City University</a></li>
+									      </ul>
+									      <footer class="LI-footer LI-row"><a href="https://uk.linkedin.com/in/ashhhbradley?trk=profile-badge-cta" class="LI-view-profile">View profile</a><span class="LI-logo"><img src="https://static.licdn.com/scds/common/u/images/logos/linkedin/logo_linkedin_93x21_v2.png" alt="LinkedIn" class="LI-icon"></span></footer>
+									    </div>
+									  </div>
+									</div>
 									<p style="text-align: center;"><a class="button" href=""><i class="pe-7s-download"></i>Download CV &nbsp; [.PDF]</a></p>
 								</div>
 
@@ -837,6 +928,7 @@
 				</div>
 			</section>
 			<section class="pt-page page-layout portfolio menu-item" id="projects">
+				<div class="portfolio-card-category" style="z-index: 2;"><p>Under Development</p></div>
 				<div class="content">
 					<div class="layout-medium" style="max-width:1220px;">
 						<h1 class="page-title"><i class="pe-7s-notebook"></i> Portfolio</h1>
@@ -1385,6 +1477,7 @@
 			<section class="pt-page page-layout" id="page-2">
 			</section>
 			<section class="pt-page page-layout menu-item" id="blog">
+				<div class="portfolio-card-category" style="z-index: 2;"><p>Very Under Development</p></div>
 				<div class="content">
 					<div class="layout-medium">
 						<h1 class="page-title"><i class="pe-7s-comment"></i> Blog</h1>
@@ -1486,9 +1579,10 @@
 				</div>
 			</section>
 			<section class="pt-page page-layout menu-item" id="contact">
+				<div class="portfolio-card-category" style="z-index: 2;"><p>Under Development</p></div>
 				<div class="layout-medium">
 
-					<h1 class="page-title"><i class="pe-7s-call"></i> Contact Me</h1>
+					<h1 class="page-title"><i class="pe-7s-mail"></i> Contact Me</h1>
 
 					<article id="post-310" class="hentry post-310 portfolio type-portfolio status-publish has-post-thumbnail portfolio-category-design">
 
