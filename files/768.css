@@ -431,6 +431,12 @@
 
 /* TWITTER PROFILE CARD */
 
+.profile-card {
+	margin-top: 5%;
+	padding-left: 40px;
+	float: right;
+}
+
 .card-container {
   width: auto;
 	max-width: 600px;
@@ -441,9 +447,9 @@
   -o-border-radius: 8px;
   border-radius: 8px;
   background-color: #fff;
-  -webkit-box-shadow: #bdc3c7 0 5px 5px;
+  /*-webkit-box-shadow: #bdc3c7 0 5px 5px;
   -moz-box-shadow: #bdc3c7 0 5px 5px;
-  box-shadow: #bdc3c7 0 5px 5px;
+  box-shadow: #bdc3c7 0 5px 5px;*/
 }
 
 .card-container header {
@@ -492,8 +498,8 @@
 .avatarcontainer {
   position: absolute;
   bottom: 0;
-  margin-left: 30px;
-  width: 30%;
+  margin: 25px;
+  width: 33%;
   display: block;
 }
 
@@ -513,6 +519,14 @@
   position: relative;
 }
 
+.profile-card-header {
+	margin-top: -20px;
+	margin-bottom: 0;
+	padding-left: 15px;
+	font-size: 1.2em;
+  color: #444;
+}
+
 .portfolio-card-category {
 	position: absolute;
 	display: block;
@@ -524,9 +538,30 @@
 	font-size: .8em;
 	padding: 8px;
 	text-align: center;
-	//border-right: 3px solid #ecf0f1;
-	//border-bottom: 3px solid #ecf0f1;
+	/*border-right: 3px solid #ecf0f1;
+	border-bottom: 3px solid #ecf0f1;*/
 	border-bottom-right-radius: 8px;
+	margin: 0;
+	background-color: #7d6ea0;
+	color: #fff;
+	overflow: hidden;
+	position: relative;
+}
+
+.portfolio-card-tag {
+	position: relative;
+	display: block;
+	padding: 3px;
+	padding-top: 0;
+}
+
+.portfolio-card-tag p {
+	width: auto;
+	font-family: 'Montserrat';
+	font-size: .6em;
+	padding: 4px;
+	text-align: center;
+	border-radius: 4px;
 	margin: 0;
 	background-color: #7d6ea0;
 	color: #fff;
@@ -578,25 +613,74 @@
   transition-timing-function: ease;
 }
 
-.data {
+.profile-card .data {
   color: #333;
 	position: relative;
-  padding: 0.5em 0;
+  padding-top: 0.5em;
+	padding-bottom: 0;
   text-align: left;
+	float: right;
 }
 
-.data li {
+.portfolio-card .data {
+  color: #333;
+	position: relative;
+  padding-top: 0.5em;
+	padding-bottom: 0;
+  text-align: left;
+	max-height: 75px;
+}
+
+.portfolio-card .data ul {
+	padding: 4px;
+	display: inline-block;
+	width: 100%;
+}
+
+.portfolio-card .data li.card-title {
+	text-align: left;
+	float: left;
+	width: auto;
+	padding: 0 8px;
+}
+
+.portfolio-card .data li.card-link {
+	float: right;
+	width: auto;
+}
+
+.portfolio-card .data li.card-border {
+	border-right: solid 1px #444;
+  float: right;
+  width: auto;
+  min-height: 55px;
+  margin-right: 5px;
+}
+
+.profile-card .data li {
+	width: auto;
+	max-width: 465px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 0px 15px;
+	text-align: center;
+	display: inline-block;
+	font-size: 1.2em;
+	font-family: 'Montserrat', Arial;
+	border-right: solid 1px #444;
+}
+
+.portfolio-card .data li {
   width: auto;
 	max-width: 465px;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-  padding: 0px 15px;
   text-align: center;
   display: inline-block;
   font-size: 1.2em;
   font-family: 'Montserrat', Arial;
-  border-right: solid 1px #444;
 }
 
 .data li a {
@@ -635,7 +719,7 @@
 }
 
 .data ul {
-  padding: 8px;
+  padding: 5px;
   margin: 0;
 }
 
@@ -721,6 +805,8 @@
 	/*width: 400px;
 	margin: 0 auto;*/
   position: relative;
+	padding: 2% 5%;
+  padding-bottom: 0px;
 }
 
 .tw-feed:after {
@@ -730,9 +816,10 @@
   bottom: 0;
   left: 0;
   pointer-events: none;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0), #ecf0f0 100%);
+  /*background-image: linear-gradient(to bottom, rgba(255,255,255,0), #ecf0f0 100%);*/
   width: 100%;
   height: 10em;
+	border-radius: 10px;
 }
 
 /* Linkedin Profile Card */

@@ -12,6 +12,10 @@
 	</style>
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
+
+	<meta property="og:title" content="Portfolio | Ashley Shaun Bradley | Game & Web Developer" />
+	<meta property="og:image" content="https://ashhhbradley.github.io/portfolio/files/images/homepage.jpg" />
+	
 	<title>Ashley Shaun Bradley | Game & Web Developer</title>
 	<!-- <link href="http://themes.pixelwars.org/empathy/feed/" rel="alternate" title="Empathy » Feed" type="application/rss+xml"> -->
 	<!-- <link href="http://themes.pixelwars.org/empathy/comments/feed/" rel="alternate" title="Empathy » Comments Feed" type="application/rss+xml"> -->
@@ -539,7 +543,7 @@
 								</p-->
 							</div>
 
-							<div class="col-sm-5" style="margin-top: 20px; padding-left: 40px; float: right;">
+							<div class="col-sm-5 profile-card">
 								<div class="card-container">
 								  <header>
 								    <div class="bio">
@@ -555,39 +559,37 @@
 								      <img src="https://pbs.twimg.com/profile_images/877080424211763200/V_BNl4R3_400x400.jpg" alt="avatar" class="avatar">
 								    </div>
 
-								    <div class="followcontainer">
-								      <div class="follow"><i class="fa fa-twitter" aria-hidden="false"></i> Follow</div>
-								    </div>
+										<div id="wrapper" class="profile-content">
+									    <div class="data">
+									      <ul>
+									        <li>
+									          <a href="">Grieving Time Lord</a>
+									          <span>@GrievingDoctor</span>
+									        </li>
+									        <li>
+									          <a class="item twitter"><span class="count"></span></a>
+									          <span>Followers</span>
+									        </li>
+									      </ul>
+									    </div>
+									  </div>
 								  </header>
-
-								  <div id="wrapper" class="profile-content">
-								    <div class="data">
-								      <ul>
-								        <li>
-								          <a href="">Grieving Time Lord</a>
-								          <span>@GrievingDoctor</span>
-								        </li>
-								        <li>
-								          <a class="item twitter"><span class="count"></span></a>
-								          <span>Followers</span>
-								        </li>
-								      </ul>
-								    </div>
-								  </div>
+									<h3 class="profile-card-header">Tweets</h3>
+									<div class="tw-feed">
+									  <a class="twitter-timeline" href="https://twitter.com/grievingdoctor"
+									     data-theme="light"
+									     data-link-color="#334455"
+									     border-radius="none"
+									     data-chrome="noheader nofooter noborders noscrollbar transparent"
+									     data-widget-id="413723523169787904"
+									     data-screen-name="grievingdoctor" data-show-replies="false"
+									     width="100%"
+											 height="440"
+									  >Tweets by GrievingDoctor</a>
+									</div>
 								</div>
 
-								<div class="tw-feed" style="padding-top: 30px;">
-								  <a class="twitter-timeline" href="https://twitter.com/grievingdoctor"
-								     data-theme="light"
-								     data-link-color="#334455"
-								     border-radius="none"
-								     data-chrome="noheader nofooter noborders noscrollbar transparent"
-								     data-widget-id="413723523169787904"
-								     data-screen-name="grievingdoctor" data-show-replies="false"
-								     width="100%"
-										 height="540"
-								  >Tweets by GrievingDoctor</a>
-								</div>
+
 
 								<script>
 									$('#wrapper').SocialCounter({
@@ -907,7 +909,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="pt-page page-layout portfolio menu-item" id="projects">
+			<section class="pt-page page-layout portfolio menu-item" id="browse">
 				<div class="portfolio-card-category" style="z-index: 2;"><p>Under Development</p></div>
 				<div class="content">
 					<div class="layout-medium" style="max-width:1220px;">
@@ -968,24 +970,7 @@
 									<p class="category">Imagine Cup 2016 Entry</p>
 								</div>
 							</div>
-							<style>
-								.portfolio-card .data ul {
-									padding: 4px;
-									display: inline-block;
-							    width: 100%;
-								}
-								.data li.card-title {
-									border-right: solid 0px #444;
-							    text-align: left;
-									float: left;
-									width: auto;
-								}
-								.data li.card-link {
-									border-left: solid 1px #444;
-									float: right;
-									width: auto;
-								}
-							</style>
+
 							<div class="media-cell hentry game post-422 portfolio type-portfolio status-publish has-post-thumbnail portfolio-category-game" id="post-422">
 								<div class="media-box">
 									<img alt="05" class="attachment-pixelwars__image_size_2 size-pixelwars__image_size_2 wp-post-image" height="375" sizes="(max-width: 500px) 100vw, 500px" src="./images/Brian.png" width="500">
@@ -997,253 +982,17 @@
 								</div>
 							</div>
 
-							<!-- <style>
-									.card-container {
-									width: 550px;
-									margin: 3em auto 1em auto;
-									-webkit-border-radius: 8px;
-									-moz-border-radius: 8px;
-									-ms-border-radius: 8px;
-									-o-border-radius: 8px;
-									border-radius: 8px;
-									padding-bottom: 1.5em;
-									background-color: #fff;
-									-webkit-box-shadow: #bdc3c7 0 5px 5px;
-									-moz-box-shadow: #bdc3c7 0 5px 5px;
-									box-shadow: #bdc3c7 0 5px 5px;
-									}
-
-									.card-container header {
-									display: block;
-									overflow: hidden;
-									position: relative;
-									padding-bottom: 0em;
-									max-height: 250px;
-									-moz-border-radius-topleft: 8px;
-									-webkit-border-top-left-radius: 8px;
-									border-top-left-radius: 8px;
-									-moz-border-radius-topright: 8px;
-									-webkit-border-top-right-radius: 8px;
-									border-top-right-radius: 8px;
-									}
-
-									.portfolio-card .bg {
-									width: 100%;
-									max-height: 250px;
-									}
-
-									.bio:hover > .desc {
-									cursor: pointer;
-									opacity: 1;
-									}
-
-									.followcontainer {
-									position: relative;
-									float: right;
-									margin-right: 30px;
-									display: block;
-									}
-
-									.followcontainer:hover > .hover {
-									opacity: 1;
-									}
-
-									.portfolio-category {
-									position: absolute;
-									//bottom: 0;
-									//margin-left: 30px;
-									width: 10%;
-									height: 170px;
-									display: block;
-									}
-
-									.portfolio-category:hover > .hover {
-									opacity: 1;
-									}
-
-									.portfolio-category p {
-									width: 160px;
-									height: 35px;
-									font-family: 'Montserrat';
-									font-size: .8em;
-									padding: 8px;
-									text-align: center;
-									//border-right: 3px solid #ecf0f1;
-									//border-bottom: 3px solid #ecf0f1;
-									border-bottom-right-radius: 8px;
-									margin: 0;
-									background-color: #7d6ea0;
-									color: #fff;
-									overflow: hidden;
-									position: relative;
-									}
-
-									.avatar img {
-									width: 65px;
-									height: 65px;
-									}
-
-									.avatar:hover + .hover {
-									opacity: 1;
-									cursor: pointer;
-									}
-
-									.hover {
-									position: absolute;
-									cursor: pointer;
-									width: 100%;
-									height: 100%;
-									background-color: #3498db;
-									top: 0;
-									font-size: 1.8em;
-									text-align: center;
-									color: white;
-									padding-top: 18%;
-									opacity: 0;
-									font-family: 'FontAwesome';
-									font-weight: 300;
-									border: 8px solid #fff;
-									-webkit-border-radius: 50%;
-									-moz-border-radius: 50%;
-									-ms-border-radius: 50%;
-									-o-border-radius: 50%;
-									border-radius: 50%;
-									-webkit-transition-property: all;
-									-moz-transition-property: all;
-									-o-transition-property: all;
-									transition-property: all;
-									-webkit-transition-duration: 0.5s;
-									-moz-transition-duration: 0.5s;
-									-o-transition-duration: 0.5s;
-									transition-duration: 0.5s;
-									-webkit-transition-timing-function: ease;
-									-moz-transition-timing-function: ease;
-									-o-transition-timing-function: ease;
-									transition-timing-function: ease;
-									}
-
-									.data {
-									margin-top: 1em;
-									color: #333;
-									}
-
-									.data li {
-									width: auto;
-									padding: 0px 15px;
-									text-align: center;
-									display: inline-block;
-									font-size: 1.2em;
-									font-family: 'Montserrat', 'Lato', Arial;
-									border-right: solid 1px #444;
-									}
-
-									.data li a {
-									text-decoration: none;
-									color: #333;
-									}
-
-									.data li a span {
-									margin-top: 0px;
-									font-size: 1em;
-									font-family: 'Montserrat', 'Lato', Arial;
-									}
-
-									.data li:last-child {
-									border: none;
-									}
-
-									.data li span {
-									display: block;
-									text-transform: uppercase;
-									font-family: 'Montserrat', 'Quicksand', Arial;
-									font-size: .5em;
-									margin-top: .6em;
-									font-weight: 700;
-									}
-
-									.data ul {
-									padding-left: 15px;
-									margin: 0;
-									}
-
-									.portfolio-card .desc {
-									position: absolute;
-									top: 0;
-									background-color: rgba(51, 71, 93, 0.6);
-									width: 100%;
-									height: 100%;
-									padding: 1.2em 1em 0 230px;
-									color: white;
-									text-align: center;
-									opacity: 0;
-									-webkit-transition-property: all;
-									-moz-transition-property: all;
-									-o-transition-property: all;
-									transition-property: all;
-									-webkit-transition-duration: 0.3s;
-									-moz-transition-duration: 0.3s;
-									-o-transition-duration: 0.3s;
-									transition-duration: 0.3s;
-									-webkit-transition-timing-function: ease-in;
-									-moz-transition-timing-function: ease-in;
-									-o-transition-timing-function: ease-in;
-									transition-timing-function: ease-in;
-									}
-
-									.desc h3 {
-									font-family: 'Montserrat', 'Lato', Arial;
-									font-size: 1.2em;
-									margin-bottom: .5em;
-									}
-
-									.desc p {
-									font-size: .9em;
-									font-family: 'Montserrat', 'Quicksand', Arial;
-									line-height: 1.5em;
-									}
-
-									.follow {
-									background-color: #E08A32;
-									width: 150px;
-									color: white;
-									font-family: 'Montserrat', 'Lato', Arial;
-									text-align: center;
-									padding: .5em;
-									-webkit-border-radius: 100px;
-									-moz-border-radius: 100px;
-									-ms-border-radius: 100px;
-									-o-border-radius: 100px;
-									border-radius: 100px;
-									-webkit-transition-property: all;
-									-moz-transition-property: all;
-									-o-transition-property: all;
-									transition-property: all;
-									-webkit-transition-duration: 0.3s;
-									-moz-transition-duration: 0.3s;
-									-o-transition-duration: 0.3s;
-									transition-duration: 0.3s;
-									-webkit-transition-timing-function: ease;
-									-moz-transition-timing-function: ease;
-									-o-transition-timing-function: ease;
-									transition-timing-function: ease;
-									}
-
-									.follow:hover {
-									background-color: #D96D00;
-									cursor: pointer;
-									}
-							</style> -->
 							<div class="media-cell hentry game post-422 portfolio type-portfolio status-publish has-post-thumbnail portfolio-category-game" id="post-423">
 								<div id="wrapper" class="card-container portfolio-card">
 								  <header>
 								    <div class="portfolio-card-category">
-								      <p>Game Development</p>
+								      <p style="background-color: #7d6ea0">Game Development</p>
 								    </div>
 
 								    <div class="bio">
 								      <img src="./images/BearWithIt2.png" alt="background" class="bg">
 								      <div class="desc">
-								        <h3>Bear With It</h3>
+								        <h3>Brief Summary</h3>
 								        <p>Unreal Engine 4</p>
 								        <p>C++ / Blueprint</p>
 								      </div>
@@ -1257,12 +1006,58 @@
 							          <span>Imagine Cup 2016 Entry</span>
 							        </li>
 							        <li class="card-link">
-							          <a class="item twitter"><i class="pe-7s-cloud-download"></i></a>
-							          <span>Download</span>
+							          <!-- <a class="item twitter"><i class="pe-7s-cloud-download"></i></a>
+							          <span>Download</span> -->
+												<div class="portfolio-card-tag">
+										      <p style="background-color: #7d6ea0">Blueprint</p>
+										    </div>
+												<div class="portfolio-card-tag">
+										      <p style="background-color: #7d6ea0">C++</p>
+										    </div>
 							        </li>
 							      </ul>
 							    </div>
+								</div>
+							</div>
 
+							<div class="media-cell hentry game post-422 portfolio type-portfolio status-publish has-post-thumbnail portfolio-category-game" id="post-423">
+								<div id="wrapper" class="card-container portfolio-card">
+								  <header>
+								    <div class="portfolio-card-category">
+								      <p style="background-color: #222">Web Development</p>
+								    </div>
+
+								    <div class="bio">
+								      <img src="./images/EverydayGossip2.png" alt="background" class="bg">
+								      <div class="desc">
+								        <h3>Brief Summary</h3>
+								        <p>News & Media Network: Article Content Website<br>Developed & Updated over a period of 2 years using HTML, CSS & JavaScript.</p>
+								      </div>
+								    </div>
+								  </header>
+
+							    <div class="data">
+							      <ul>
+							        <li class="card-title">
+							          <a href="">EverydayGossip</a>
+							          <span>Self Employment</span>
+							        </li>
+											<li class="card-link">
+												<div class="portfolio-card-tag">
+										      <p style="background-color: #333">JavaScript</p>
+										    </div>
+							        </li>
+							        <li class="card-link">
+												<div class="portfolio-card-tag">
+										      <p style="background-color: #333">HTML</p>
+										    </div>
+												<div class="portfolio-card-tag">
+										      <p style="background-color: #333">CSS</p>
+										    </div>
+							        </li>
+											<li class="card-border"></li>
+							      </ul>
+							    </div>
 								</div>
 							</div>
 							<!--div class="media-cell hentry game video post-420 portfolio type-portfolio status-publish has-post-thumbnail portfolio-category-game" id="post-420" style="position: absolute; left: 346px; top: 364px; width: 33.2692%;">
